@@ -1,4 +1,4 @@
-# Supports the use of randomness within Terraform configurations. 
+# Supports the use of randomness within Terraform configurations.
 resource "random_id" "this" {
   byte_length = 3
 }
@@ -50,7 +50,7 @@ resource "aws_s3_bucket_acl" "this" {
 
 }
 
-# Provides a resource to manage S3 Bucket Ownership Controls. For more information, 
+# Provides a resource to manage S3 Bucket Ownership Controls. For more information,
 # see: https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html
 resource "aws_s3_bucket_ownership_controls" "this" {
 
@@ -62,7 +62,7 @@ resource "aws_s3_bucket_ownership_controls" "this" {
 
 }
 
-# Provides a resource for controlling versioning on an S3 bucket. For more information, 
+# Provides a resource for controlling versioning on an S3 bucket. For more information,
 # see: https://docs.aws.amazon.com/AmazonS3/latest/userguide/manage-versioning-examples.html
 resource "aws_s3_bucket_versioning" "this" {
 
@@ -74,7 +74,7 @@ resource "aws_s3_bucket_versioning" "this" {
 
 }
 
-# Manages S3 bucket-level Public Access Block configuration. For more information, 
+# Manages S3 bucket-level Public Access Block configuration. For more information,
 # see: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html
 resource "aws_s3_bucket_public_access_block" "this" {
 
@@ -86,5 +86,3 @@ resource "aws_s3_bucket_public_access_block" "this" {
   restrict_public_buckets = true
 
 }
-
-
